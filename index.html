@@ -85,17 +85,48 @@
                 <h3>Location</h3>
                 <p>White Birch Resort is located 4 miles west of Blackduck, MN and 27 miles north of Bemidji, MN on the north shore of Blackduck Lake. <em>Please Note:</em> MapQuest, Yahoo Maps, and GPS devices sometimes place us in the wrong place since our street was renamed a couple years ago. We suggest using them to gain directions to Blackduck Minnesota 56630, but then use our written directions to get to the resort from there. </p>
                 <a class="button" href="#!" title="Get Directions">Get Directions</a>
-            </article>    
-            <img src="http://placehold.it/800x600" alt="Google Map">
+            </article> 
+            
+            <div class="gmap">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:450px;'><div id='gmap_canvas' style='height:300px;width:450px;'></div><div><small><a href="http://embedgooglemaps.com">                                   embed google maps                           </a></small></div><div><small><a href="http://www.proxysitereviews.com/">proxy sites</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:9,center:new google.maps.LatLng(47.7467545,-94.61276629999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.7467545,-94.61276629999998)});infowindow = new google.maps.InfoWindow({content:'<strong>White Birch Resort</strong><br>18882 N Blackduck Lake RD NE Hines MN 56647<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            </div>
         </section>
 
-        <section class="">
+        <section class="reviews">
             <h3>Leave A Review</h3>
             <a class="button" href="#!" title="Click Here">Click Here</a>
+            <form class="form-open">
+                <p>Name: <input type="text" name="Name:" placeholder="Name"></input></p>
+                <p>Email: <input type="text" name="Email:" placeholder="Email Address"></input></p>
+                <p>Number of nights:
+                    <select name="nights">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select></p>
+                <p>Your Accommodations:
+                    <select name="accommodations">
+                        <option value="Reunion Townhome">Reunion Townhome</option>
+                        <option value="Vacation Home">Vacation Home</option>
+                        <option value="Studio Cabin">Studio Cabin</option>
+                    </select></p>
+                <p>Rate Your Stay:
+                    <input type="radio" name="rating" value="1 Star"> 1 Star</input>
+                    <input type="radio" name="rating" value="2 Stars"> 2 Stars</input>
+                    <input type="radio" name="rating" value="3 Stars"> 3 Stars</input>
+                    <input type="radio" name="rating" value="4 Stars"> 4 Stars</input>
+                    <input type="radio" name="rating" value="5 Stars"> 5 Stars</input>
+                </p>
+                <p>Guest Comments:</p> 
+                <textarea name="comments" rows="6" cols="50"></textarea>
+                <p><input type="submit"></input></p>
+            </form>
         </section>
 
         <footer class="main-footer">
-        <p>Copyright</p>
+        <p>&copy; 2004-2016 White Birch Resort. All Rights Reserved.</p>
         </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>

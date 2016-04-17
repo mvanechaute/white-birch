@@ -333,19 +333,41 @@ h1, h2, h3, h4 {
     float: left;
 }
 
-.paragraph-left img {
-    width: 40%;
+.paragraph-left p {
+    margin-bottom: 2em;
+}
+
+.gmap {
+    margin-top: 2em;
     float: left;
 }
 
-.paragraph-left p {
-    margin-bottom: 2em;
+/* Reviews */
+
+.reviews {
+    position: relative;
+}
+
+.reviews .button {
+    position: absolute;
+    top: 3em;
+    right: 2em;
+}
+
+.form-open {
+    display: none;
 }
 
 /* Footer */
 
 .main-footer {
-    background-color: #3D3D3B;
+    background-image: url(../img/gradient.png);
+    background-repeat: none;
+    background-size: 100%;
+    color: #E2E1E8;
+    font-family: "bonvenocflight", sans-serif;
+    padding: .5em;
+    text-align: center;
 }
 
 /* ==========================================================================
