@@ -1,19 +1,19 @@
-var navButton = document.querySelector('.reviews .button');
+var navButton = document.querySelector('.review-button');
 
 navButton.addEventListener('click', function() {
   console.log('clicky!!!');
   document
-    .querySelector('body')
+    .querySelector('.js')
     .classList
-    .toggle('form-open');
+    .add('form-open');
 });
 
-var closeButton = document.querySelector('.reviews .button');
+var closeButton = document.querySelector('.close-icon');
 
 closeButton.addEventListener('click', function() {
   console.log('closed!!!');
   document
-    .querySelector('body')
+    .querySelector('.js')
     .classList
-    .toggle('form-open');
+    .remove('form-open');
 });

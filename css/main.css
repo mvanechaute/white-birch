@@ -190,7 +190,6 @@ h1, h2, h3, h4 {
     width: 100%;
     z-index: 100;
     padding-left: 200px;
-    max-height: 90px;
 }
 
 .main-header img {
@@ -254,7 +253,7 @@ h1, h2, h3, h4 {
 
 .guest-quote {
     position: absolute;
-    top: 20%;
+    top: 15%;
     background-color: hsla(0,0%,0%,0.4);
     width: 45%;
     font-family: "droid_serifitalic", serif;
@@ -264,11 +263,21 @@ h1, h2, h3, h4 {
     letter-spacing: .1em;
     padding: 1em 2em 1em 4em;
     margin: 0;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 4px black;
 }
 
-.guest-quote span {
+.guest-quote h2 {
+    font-size: 1.25rem;
     color: #2BAFDF;
+}
+
+.guest-quote p {
+    color: #9F9F9F;
+    size: 90%;
+}
+
+.guest {
+
 }
 
 /* Family Resort Section */
@@ -383,31 +392,87 @@ h1, h2, h3, h4 {
     float: left;
 }
 
-/* Reviews */
+/* Review */
 
-.reviews {
+.js {
     position: relative;
 }
 
-.reviews .button {
+.review-button {
     position: absolute;
-    top: 2em;
+    top: 1em;
     right: 2em;
+    color: #fff;
+    background-image: url(../img/gradient.png);
+    background-repeat: none;
+    background-size: 100%;
+    font-family: "bonvenocflight", sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1em 1.5em;
+    cursor: pointer;
 }
 
-.form-open {
+.review-wrapper {
     display: none;
+}
+
+/* Reviews Form Open */
+
+.form-open .review-button {
+    display: none;
+}
+
+.form-open .review-wrapper {
+    display: inline;
+}
+
+.form-open .close-icon {
+    color: #2BAFDF;
+    font-style: normal;
+    font-size: 200%;
+    position: absolute;
+    top: 0.7em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.form-open h4 {
+    margin-top: 2em;
+    color: #2BAFDF;
+}
+
+.form-open form {
+    margin-top: 2em;
+}
+
+.form-open .review-button {
+    display: none;
+}
+
+.form-open p {
+    font-size: 85%;
+    letter-spacing: .025em;
+    color: #3D3D3B;
+}
+
+.form-open input[type="radio"] {
+    margin-left: 1em;
 }
 
 /* Footer */
 
 .main-footer {
-    background-image: url(../img/gradient.png);
-    background-repeat: none;
-    background-size: 100%;
+    background-color: #3D3D3B;
+}
+
+.main-footer p {
     color: #E2E1E8;
     font-family: "bonvenocflight", sans-serif;
-    padding: .25em;
+    padding: 1em;
     font-weight: bolder;
     text-align: center;
 }
