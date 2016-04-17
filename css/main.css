@@ -108,6 +108,17 @@ textarea {
     font-style: normal;
 }
 
+@font-face {
+    font-family: "droid_serifitalic";
+    src: url("../fonts/DroidSerif-Italic-webfont.eot");
+    src: url("../fonts/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/DroidSerif-Italic-webfont.woff") format("woff"),
+         url("../fonts/DroidSerif-Italic-webfont.ttf") format("truetype"),
+         url("../fonts/DroidSerif-Italic-webfont.svg#droid_serifitalic") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Globals */
 
 html {
@@ -119,7 +130,13 @@ html {
 }
 
 body {
-    margin-top: 5em;
+    margin-top: 5.7em;
+}
+
+p {
+    font-size: 90%;
+    line-height: 1.5;
+
 }
 
 section {
@@ -134,20 +151,20 @@ h1, h2, h3, h4 {
     font-family: "bonvenocflight", sans-serif;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    line-height: 1.2;
+    line-height: 1.3;
     margin: .75em 0;
 }
 
 .button {
     color: #2BAFDF;
-    border: 1px solid #2BAFDF;
+    border: 1.5px solid #2BAFDF;
     font-family: "bonvenocflight", sans-serif;
     font-size: .75rem;
     text-transform: uppercase;
     letter-spacing: .15rem;
     text-decoration: none;
-    font-weight: bold;
-    padding: 1em;
+    font-weight: bolder;
+    padding: 1em 1.5em;
 }
 
 .button:hover {
@@ -168,6 +185,7 @@ h1, h2, h3, h4 {
     width: 100%;
     z-index: 100;
     padding-left: 200px;
+    max-height: 90px;
 }
 
 .main-header img {
@@ -190,6 +208,36 @@ h1, h2, h3, h4 {
     right: 2em;
 }
 
+/* Main Nav */
+
+.main-nav {
+    width: 100%;
+    padding-left: 148px;
+    font-family: "bonvenocflight", sans-serif;
+    background-color: #3D3D3B;
+}
+
+.main-nav ul {
+    margin: 0;
+}
+
+.main-nav li {
+    font-size: 80%;
+    color: #E2E1E8;
+    display: inline-block;
+    padding: .75em 1em;
+}
+
+.main-nav li a {
+    text-decoration: none;
+}
+
+.main-nav li:hover {
+    background-color: #fff;
+    color: #2BAFDF;
+    font-weight: bolder;
+}
+
 /* Main Image */
 
 .jumbotron {
@@ -200,13 +248,23 @@ h1, h2, h3, h4 {
     padding: 0;
 }
 
-/* Main Nav */
-
-.main-nav {
+.guest-quote {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    top: 20%;
+    background-color: hsla(0,0%,0%,0.35);
+    width: 45%;
+    font-family: "droid_serifitalic", serif;
+    line-height: 1.6rem;
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: .1em;
+    padding: 1em 2em 1em 4em;
+    margin: 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+.guest-quote span {
+    color: #2BAFDF;
 }
 
 /* Family Resort Section */
@@ -233,11 +291,38 @@ h1, h2, h3, h4 {
 
 /* Cabins */
 
+.grid {
+    overflow: auto;
+}
 
+.cabin {
+    width: 30%;
+    float: left;
+    margin-right: 1.5em;
+    position: relative;
+}
+
+.cabin:hover {
+    background-color: hsla(0,0%,0%,0.75);
+}
+
+.cabin h4 {
+    position: absolute;
+    top: 50%
+    left: 50%;
+    color: #fff;
+    display: block;
+}
+
+.cabin_image {
+    position: relative;
+    display: block;
+}
 
 /* Location */
 
 .paragraph-left {
+    clear: both;
     background-color: #E8E9F3;
     overflow: auto;
 }
@@ -255,6 +340,12 @@ h1, h2, h3, h4 {
 
 .paragraph-left p {
     margin-bottom: 2em;
+}
+
+/* Footer */
+
+.main-footer {
+    background-color: #3D3D3B;
 }
 
 /* ==========================================================================

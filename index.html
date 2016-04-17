@@ -27,22 +27,22 @@
             <a class="button" href="#!" title="Reservations">Make A Reservation</a>
         </header>
 
-        <section class="jumbotron">
-            <img src="img/cabin_opener.jpg" alt="Cabin on the Lake">
-            <blockquote class="guest-quote">"Thank you again for such a wonderful vacation. It's all our kids have talked about and we can't wait to come back next summer!" – Becki and John S. and kids</blockquote>
-        </section>
-
         <nav class="main-nav">
             <ul>
-                <li><a href="#!" title="Cabins">Cabins</a></li>
-                <li><a href="#!" title="Rates">Rates</a></li>
-                <li><a href="#!" title="The Lodge">The Lodge</a></li>
-                <li><a href="#!" title="Attractions">Attractions</a></li>
-                <li><a href="#!" title="Resort Activities">Resort Activities</a></li>
-                <li><a href="#!" title="Links">Links</a></li>
-                <li><a href="#!" title="Contact Us">Contact Us</a></li>
+                <a href="#!" title="Cabins"><li>Cabins</li></a>
+                <a href="#!" title="Rates"><li>Rates</li></a>
+                <a href="#!" title="The Lodge"><li>The Lodge</li></a>
+                <a href="#!" title="Attractions"><li>Attractions</li></a>
+                <a href="#!" title="Resort Activities"><li>Resort Activities</li></a>
+                <a href="#!" title="Links"><li>Links</li></a>
+                <a href="#!" title="Contact Us"><li>Contact Us</li></a>
             </ul>
         </nav>
+
+        <section class="jumbotron">
+            <img src="img/cabin_opener.jpg" alt="Cabin on the Lake">
+            <blockquote class="guest-quote">"Thank you again for such a wonderful vacation. It's all our kids have talked about and we can't wait to come back next summer!" <span class="guest">– Becki and John S. and family</span></blockquote>
+        </section>
 
         <section class="paragraph-right">
             <img src="img/family.jpg" alt="Family Vacation">
@@ -54,14 +54,30 @@
         </section>
 
         <section class="grid">
-            <h3>Rent A Cabin</h3>
-            <a href="#" title="cabin_one">
-                <article class="cabin">
-                    <h4>PROJECT 1</h4>
-                    <img class="cabin_image" src="" alt="">
-                    <p></p>
-                </article>
-            </a>
+            <h3>Featured Cabins</h3>
+                <a href="#" title="cabin_one">
+                    <article class="cabin">
+                        <h4>Reunion Townhome</h4>
+                        <p class="rate">$169</p>
+                        <img class="cabin_image" src="img/cabin1.jpg" alt="Reunion Townhome">
+                    </article>
+                </a>
+
+                <a href="#" title="cabin_one">
+                    <article class="cabin">
+                        <h4>Vacation Home</h4>
+                        <p class="rate">$230</p>
+                        <img class="cabin_image" src="img/cabin2.jpg" alt="Vacation Home">
+                    </article>
+                </a>
+
+                <a href="#" title="cabin_one">
+                    <article class="cabin">
+                        <h4>Studio Cabin</h4>
+                        <p class="rate">$110</p>
+                        <img class="cabin_image" src="img/cabin3.jpg" alt="Studio Cabin">
+                    </article>
+                </a>
         </section>
 
         <section class="paragraph-left">
@@ -75,9 +91,12 @@
 
         <section class="">
             <h3>Leave A Review</h3>
+            <a class="button" href="#!" title="Click Here">Click Here</a>
         </section>
 
-        <footer></footer>
+        <footer class="main-footer">
+        <p>Copyright</p>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
