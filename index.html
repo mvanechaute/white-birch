@@ -29,19 +29,19 @@
 
         <nav class="main-nav">
             <ul>
-                <a href="#!" title="Cabins"><li>Cabins</li></a>
-                <a href="#!" title="Rates"><li>Rates</li></a>
-                <a href="#!" title="The Lodge"><li>The Lodge</li></a>
-                <a href="#!" title="Attractions"><li>Attractions</li></a>
-                <a href="#!" title="Resort Activities"><li>Resort Activities</li></a>
-                <a href="#!" title="Links"><li>Links</li></a>
-                <a href="#!" title="Contact Us"><li>Contact Us</li></a>
+                <li><a href="#!" title="Cabins">Cabins</a></li>
+                <li><a href="#!" title="Rates">Rates</a></li>
+                <li><a href="#!" title="The Lodge">The Lodge</a></li>
+                <li><a href="#!" title="Attractions">Attractions</a></li>
+                <li><a href="#!" title="Resort Activities">Resort Activities</a></li>
+                <li><a href="#!" title="Links">Links</a></li>
+                <li><a href="#!" title="Contact Us">Contact Us</a></li>
             </ul>
         </nav>
 
         <section class="jumbotron">
             <img src="img/cabin_opener.jpg" alt="Cabin on the Lake">
-            <blockquote class="guest-quote"><h2>What Our Guests are Saying:</h2>"Thank you again for such a wonderful vacation. It's all our kids have talked about and we can't wait to come back next summer!"<p>– Becki and John S. and family</p></blockquote>
+            <blockquote class="guest-quote"><h2 class="quote-headline">What Our Guests are Saying:</h2>"Thank you again for such a wonderful vacation. It's all our kids have talked about and we can't wait to come back next summer!"<p>– Becki and John S. and family</p></blockquote>
         </section>
 
         <section class="paragraph-right">
@@ -58,33 +58,33 @@
                 <a href="#" title="cabin_one">
                     <article class="cabin">
                         <div class="cabin-name-icon">
-                            <img class="icon" src="img/guests-medium-icon.png" alt="2-10 Guests">
-                            <h4>Reunion Townhome</h4>
+                            <img class="icon" src="img/guests-small-icon.png" alt="1-2 Guests">
+                            <h4>Studio Cabin</h4>
                         </div>    
-                        <p class="rate">$169</p>
-                        <img class="cabin_image" src="img/cabin1.jpg" alt="Reunion Townhome">
+                        <p class="rate">$110</p>
+                        <img class="cabin_image" src="img/cabin_sm.jpg" alt="Studio Cabin">
                     </article>
                 </a>
 
                 <a href="#" title="cabin_two">
                     <article class="cabin">
                         <div class="cabin-name-icon">
-                            <img class="icon" src="img/guests-large-icon.png" alt="10-24 Guests">
-                            <h4>Vacation Home</h4>
+                            <img class="icon" src="img/guests-medium-icon.png" alt="2-10 Guests">
+                            <h4>Reunion Townhouse</h4>
                         </div>    
-                        <p class="rate">$230</p>
-                        <img class="cabin_image" src="img/cabin2.jpg" alt="Vacation Home">
+                        <p class="rate">$169</p>
+                        <img class="cabin_image" src="img/cabin_md.jpg" alt="Reunion Townhouse">
                     </article>
                 </a>
 
                 <a href="#" title="cabin_three">
-                    <article class="cabin">
+                     <article class="cabin">
                         <div class="cabin-name-icon">
-                            <img class="icon" src="img/guests-small-icon.png" alt="1-2 Guests">
-                            <h4>Studio Cabin</h4>
+                            <img class="icon" src="img/guests-large-icon.png" alt="10-24 Guests">
+                            <h4>Vacation Home</h4>
                         </div>    
-                        <p class="rate">$110</p>
-                        <img class="cabin_image" src="img/cabin3.jpg" alt="Studio Cabin">
+                        <p class="rate">$230</p>
+                        <img class="cabin_image" src="img/cabin_lg.jpg" alt="Vacation Home">
                     </article>
                 </a>
         </section>
@@ -92,7 +92,7 @@
         <section class="paragraph-left">
             <article class="paragraph-left-content">
                 <h3>Location</h3>
-                <p>White Birch Resort is located 4 miles west of Blackduck, MN and 27 miles north of Bemidji, MN on the north shore of Blackduck Lake. <em>Please Note:</em> MapQuest, Yahoo Maps, and GPS devices sometimes place us in the wrong place since our street was renamed a couple years ago. We suggest using them to gain directions to Blackduck Minnesota 56630, but then use our written directions to get to the resort from there. </p>
+                <p>White Birch Resort is located 4 miles west of Blackduck, MN and 27 miles north of Bemidji, MN on the north shore of Blackduck Lake. <b>Please Note:</b> MapQuest, Yahoo Maps, and GPS devices sometimes place us in the wrong place since our street was renamed a couple years ago. We suggest using them to gain directions to Blackduck Minnesota 56630, but then use our written directions to get to the resort from there. </p>
                 <a class="button" href="#!" title="Get Directions">Get Directions</a>
             </article> 
             
@@ -106,9 +106,14 @@
             <p class="review-button">Click Here</p>   
             <div class="review-wrapper">
                 <i class="close-icon">&times;</i>
+                <div class="image-wrapper">
+                    <img src="img/sunset.jpg" alt="sunset">
+                    <p>Thank you!</p>
+                </div>    
+                <p>Please take a moment to let us know what you loved about your stay, or what we could do better. We hope you enjoyed your time at White Birch Resort!</p>
                 <form>
-                    <p>Name: <input type="text" name="Name:" placeholder="Name"></input></p>
-                    <p>Email: <input type="text" name="Email:" placeholder="Email Address"></input></p>
+                    <p>Name: <input type="text" name="Name:" placeholder="Name"></p>
+                    <p>Email: <input type="text" name="Email:" placeholder="Email Address"></p>
                     <p>Number of nights:
                         <select name="nights">
                             <option value="1">1</option>
@@ -119,20 +124,20 @@
                         </select></p>
                     <p>Your Accommodations:
                         <select name="accommodations">
-                            <option value="Reunion Townhome">Reunion Townhome</option>
-                            <option value="Vacation Home">Vacation Home</option>
                             <option value="Studio Cabin">Studio Cabin</option>
+                            <option value="Reunion Townhouse">Reunion Townhouse</option>
+                            <option value="Vacation Home">Vacation Home</option>
                         </select></p>
                     <p>Rate Your Stay:
-                        <input type="radio" name="rating" value="1 Star"> 1 Star</input>
-                        <input type="radio" name="rating" value="2 Stars"> 2 Stars</input>
-                        <input type="radio" name="rating" value="3 Stars"> 3 Stars</input>
-                        <input type="radio" name="rating" value="4 Stars"> 4 Stars</input>
-                        <input type="radio" name="rating" value="5 Stars"> 5 Stars</input>
+                        <input type="radio" name="rating" value="1 Star"> 1 Star
+                        <input type="radio" name="rating" value="2 Stars"> 2 Stars
+                        <input type="radio" name="rating" value="3 Stars"> 3 Stars
+                        <input type="radio" name="rating" value="4 Stars"> 4 Stars
+                        <input type="radio" name="rating" value="5 Stars"> 5 Stars
                     </p>
-                    <h4>Tell us how we did!</h4> 
-                    <textarea name="comments" rows="6" cols="50"></textarea>
-                    <p><input type="submit"></input></p>
+                    <h4>Tell us how we did:</h4> 
+                    <textarea name="comments" rows="6" cols="50" placeholder="We can't wait to come back next year!"></textarea>
+                    <p><input type="submit"></p>
                 </form>
             </div>    
         </section>
