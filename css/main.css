@@ -143,6 +143,10 @@ section {
     padding: 2em;
 }
 
+section h3 {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
 }
@@ -298,7 +302,7 @@ h1, h2, h3, h4 {
 .cabin {
     width: 30%;
     float: left;
-    margin-right: 1.5em;
+    margin: 1.5em 1.5em 0 0;
     position: relative;
 }
 
@@ -308,31 +312,38 @@ h1, h2, h3, h4 {
 }
 
 .cabin h4 {
-    position: absolute;
     color: #fff;
     text-align: center;
     font-weight: bolder;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 125%;
+    margin-top: 1em;
+    font-size: 2vw;
+}
+
+.cabin .icon {
+    width: 30%;
+}
+
+.cabin-name-icon {
+    position: absolute;
+    font-size: 120%;
     visibility: hidden;
+    width: 100%;
 }
 
 .cabin:hover {
     background-color: hsla(0,0%,0%,0.5);
 }
 
-.cabin:hover h4 {
+.cabin:hover .cabin-name-icon {
     position: absolute;
     color: #fff;
     text-align: center;
     font-weight: bolder;
-    top: 45%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 125%;
     visibility: visible;
+    max-width: 85%;
 }
 
 .rate {
@@ -340,9 +351,11 @@ h1, h2, h3, h4 {
     background-size: 100%;
     background-repeat: none;
     color: #fff;
-    padding: .3em 1em;
+    padding: .25em .75em;
     position: absolute;
+    top: 0;
     right: 0;
+    margin: 0;
     font-size: 1rem;
     letter-spacing: .1em;
 }
@@ -378,7 +391,7 @@ h1, h2, h3, h4 {
 
 .reviews .button {
     position: absolute;
-    top: 3em;
+    top: 2em;
     right: 2em;
 }
 
@@ -394,7 +407,7 @@ h1, h2, h3, h4 {
     background-size: 100%;
     color: #E2E1E8;
     font-family: "bonvenocflight", sans-serif;
-    padding: .5em;
+    padding: .25em;
     font-weight: bolder;
     text-align: center;
 }
